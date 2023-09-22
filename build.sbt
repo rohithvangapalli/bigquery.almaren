@@ -7,7 +7,7 @@ lazy val scala213 = "2.13.9"
 crossScalaVersions := Seq(scala212,scala213)
 ThisBuild / scalaVersion := scala213
 
-val sparkVersion = "3.3.3"
+val sparkVersion = "3.4.1"
 val majorVersionReg = "([0-9]+\\.[0-9]+).{0,}".r
 
 val majorVersionReg(majorVersion) = sparkVersion
@@ -69,4 +69,3 @@ ThisBuild / publishTo := {
 
 ThisBuild / publishMavenStyle := true
 updateOptions := updateOptions.value.withGigahorse(false)
-
