@@ -5,7 +5,7 @@ lazy val scala212 = "2.12.10"
 
 ThisBuild / scalaVersion := scala212
 
-val sparkVersion = "3.2.4"
+val sparkVersion = "3.1.3"
 val majorVersionReg = "([0-9]+\\.[0-9]+).{0,}".r
 
 val majorVersionReg(majorVersion) = sparkVersion
