@@ -2,12 +2,10 @@ ThisBuild / name := "bigquery.almaren"
 ThisBuild / organization := "com.github.music-of-the-ainur"
 
 lazy val scala212 = "2.12.10"
-lazy val scala213 = "2.13.9"
 
-crossScalaVersions := Seq(scala212,scala213)
-ThisBuild / scalaVersion := scala213
+ThisBuild / scalaVersion := scala212
 
-val sparkVersion = "3.4.1"
+val sparkVersion = "3.2.4"
 val majorVersionReg = "([0-9]+\\.[0-9]+).{0,}".r
 
 val majorVersionReg(majorVersion) = sparkVersion
